@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:wght@700&display=swap');
+
+:root {
+    --darkCyan: hsl(158, 36%, 37%);
+    --cream: hsl(30, 38%, 92%);
+
+    --darkBlue: hsl(212, 21%, 14%);
+    --grayishBlue: hsl(228, 12%, 48%);
+    --white: hsl(0, 0%, 100%);
+}
+
+* {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--cream);
+}
+
+.content {
+    display: flex;
+    width: 40rem;
+    height: 30rem;
+    background-color: var(--white);
+
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 25px 40px;
+}
+
+.info h2 {
+    font-size: 14px;
+    letter-spacing: 5px;
+    font-weight: 400;
+    color: var(--grayishBlue);
+}
+
+.info h1 {
+    font-family: 'Fraunces', sans-serif;
+    line-height: 32px;
+    color: var(--darkBlue);
+}
+
+.info p {
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--grayishBlue);
+    line-height: 25px;
+}
+
+.desktop-img {
+    width: 20rem;
+    height: 30rem;
+}
+
+.mobile-img {
+    display: none;
+}
+
+.price {
+    display: flex;
+
+    align-items: center;
+}
+
+.price h1 {
+    color: var(--darkCyan);
+}
+
+.price h2 {
+    letter-spacing: 0px;
+    margin-left: 20px;
+    text-decoration: line-through;
+}
+
+.button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    height: 12%;
+    border-radius: 10px;
+
+    background-color: var(--darkCyan);
+}
+
+.button:hover {
+    cursor: pointer;
+    background-color: var(--darkBlue);
+}
+
+.button p {
+    color: var(--white);
+    margin-left: 10px;
+}
+
+@media (max-width: 670px) {
+    .content {
+        flex-direction: column;
+        width: 21rem;
+        height: 40rem;
+    }
+
+    .info {
+        justify-content: space-between;
+        padding: 30px 20px;
+        flex-grow: 1;
+    }
+
+    .desktop-img {
+        display: none;
+    }
+
+    .mobile-img {
+        display: flex;
+    }
+
+    .button {
+        height: 15%;
+    }
+}
