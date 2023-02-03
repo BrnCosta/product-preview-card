@@ -31,8 +31,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- [Solution URL](https://www.frontendmentor.io/solutions/product-preview-card-using-html-and-css-lkjdSUy6uK)
+- [Live Site URL](https://brncosta.github.io/product-preview-card/)
 
 ## My process
 
@@ -41,11 +41,10 @@ Users should be able to:
 - HTML5
 - CSS
 - Flexbox
-- CSS Grid
 
 ### What I learned
 
-Learned to change a image depeding on device's screen size.
+Learned to change a image depending on device's screen size.
 
 ```html
 <img alt="Perfume Image" src="./images/image-product-mobile.jpg" class="mobile-img" />
